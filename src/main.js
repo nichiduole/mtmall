@@ -3,9 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import '@/assets/css/normalize.css'
-import '@/assets/css/common.less'
+import 'lib-flexible'
+import FastClick from 'fastclick'
 
 Vue.config.productionTip = false
+
+FastClick.attach(document.body)
 
 new Vue({
     router,

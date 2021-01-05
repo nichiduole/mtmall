@@ -1,10 +1,12 @@
 module.exports = {
     css: {
         loaderOptions: {
-            less: {
-                globalVars: {
-                    maincolor: 'yellow'
-                }
+            postcss: {
+                plugins: [
+                    px2rem({
+                        remUnit: 37.5
+                    })
+                ]
             }
         }
     }
