@@ -1,14 +1,8 @@
 <template>
-  <div>
-    <MainTabBar></MainTabBar>
-    <router-view></router-view>
-  </div>
+  <div>订单</div>
 </template>
 
 <script>
-
-import MainTabBar from "@/components/MainTabBar.vue";
-
 export default {
   name: '',
   data () {
@@ -16,9 +10,7 @@ export default {
     };
   },
 
-  components: {
-    MainTabBar
-  },
+  components: {},
 
   computed: {},
 
