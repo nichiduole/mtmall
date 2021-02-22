@@ -1,0 +1,33 @@
+body {
+    box-sizing: border-box;
+    touch-action: auto;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
