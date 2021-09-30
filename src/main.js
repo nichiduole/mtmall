@@ -9,6 +9,7 @@ import 'lib-flexible'
 import FastClick from 'fastclick'
 import '@/swiperConfig.js'
 import './vee-validate'
+
 Vue.config.productionTip = false
 
 FastClick.attach(document.body)

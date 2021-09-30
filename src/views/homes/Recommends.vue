@@ -3,7 +3,8 @@
     <div v-for="recommend in recommends"
          :key="recommend.id"
          class="content">
-      <img :src="recommend.img">
+      <img :src="recommend.img"
+           @click="test($event,recommends,recommend)">
       <p>{{recommend.title}}</p>
     </div>
   </div>
@@ -13,6 +14,13 @@
 export default {
   name: 'Recommends',
   props: ['recommends'],
+  methods: {
+    test (a, b, c) {
+      console.log(a)
+      console.log(b)
+      console.log(c)
+    }
+  }
 }
 
 </script>
